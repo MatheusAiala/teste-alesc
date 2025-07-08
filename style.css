@@ -1,0 +1,55 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 55px;
+}
+
+.container{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+button {
+  font-size: 10px;
+  padding: 10px 20px;
+  background:none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none; /* Esconde o elemento */
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 50%;
+  background: #f9f9f9;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+button {
+  background: none;   /* remove fundo */
+  border: none;       /* remove borda */
+  font-size: 25px;    /* tamanho do símbolo */
+  cursor: pointer;    /* cursor de mãozinha */
+  color: #333;        /* cor do +, troque se quiser */
+}
+
+button:focus {
+  outline: none;      /* remove contorno de foco */
+}
+button:hover {
+  color: #007bff;     /* cor ao passar o mouse */
+}
