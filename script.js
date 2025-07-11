@@ -12,3 +12,10 @@ button.textContent = '+';
 }
 
 });
+
+const searchInput = document.getElementById('seach');
+const seachButton = document.getElementById('seach-button');
+
+consttableBody = minhatale ? minhatale.querySelector('tbody') : null;
+
+const initialTableRows = tableBody ? Array.from(tableBody.querySelectorAll('tr')) : [];
