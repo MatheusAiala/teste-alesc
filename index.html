@@ -9,52 +9,65 @@
 </head>
 <body>
 
-  <div class="input-group">
-      <button id="seach-button" class="search-icon">
-          <i class="bi bi-search"></i>
-      </button>
-    <input 
-          id="seach"
-          type="text"
-          class="input-field"
-          placeholder="Pesquisar...">
-    
-  </div>
+  <div class="main-content-wrapper">
 
-  <div class="container">
-    
+    <div class="search-bar-wrapper">
+      <div class="input-group">
+        <button id="seach-button" class="search-icon">
+            <i class="bi bi-search"></i>
+        </button>
+        <input 
+              id="seach"
+              type="text"
+              class="input-field"
+              placeholder="Pesquisar...">    
+      </div>
+    </div>  
 
-<button id="toggleButton">+</button>
+        <button id="toggleButton">+</button>
 
-<table id="minha_table" class="hidden">
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Idade</th>
-      <th>Profissão</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>João</td>
-      <td>30</td>
-      <td>Engenheiro</td>
-    </tr>
-    <tr>
-      <td>Maria</td>
-      <td>25</td>
-      <td>Médica</td>
-    </tr>
-    <tr>
-      <td>Carlos</td>
-      <td>28</td>
-      <td>Professor</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+        <table id="table_fixa">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Profissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João</td>
+                    <td>25</td>
+                    <td>Engenheiro</td>
+                </tr>
+                <tr>  
+                    <td>Maria</td>
+                    <td>23</td>
+                    <td>Médica</td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>35</td>
+                    <td>Uber</td>
+                </tr>
+            </tbody>
+        </table>
 
-<script src="script.js"></script>
+        <table id="minha_table" class="hidden">
+            <tbody>
+                <tr>
+                    <td>R$10.0000</td>
+                </tr>
+                <tr>
+                    <td>R$60.0000</td>
+                </tr>
+                <tr>
+                    <td>R$4.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+  </div><script src="script.js"></script>
 
 </body>
 </html>
