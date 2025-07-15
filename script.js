@@ -89,11 +89,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
- if (button && container) {
+if (button && container) {
+  const calendarInput = document.getElementById('calendar-input');
+
+  // Cria uma variável para guardar a instância do calendário
+  let calendarInstance = null;
+
   button.addEventListener('click', () => {
     container.classList.toggle('hidden');
+
+    // Inicializa o Flatpickr só na primeira vez
+    if (!calendarInstance) {
+      calendarInstance = flatpickr(calendarInput, {
+        inline: true,
+        dateFormat: "Y-m-d",
+        locale: "pt"
+      });
+    }
   });
 }
+
 
 });
 
